@@ -1,0 +1,134 @@
+body{
+    background-color: #fff !important;
+} 
+.left{
+float:left;
+padding: 0px 10px;
+vertical-align:middle;
+line-height: 35px;
+}
+.right_nav{
+float:right;
+padding: 0px 10px;
+vertical-align:middle;
+line-height: 35px;
+}
+table.base{
+    border: 1px solid #111;
+
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    -khtml-user-select: text;
+}
+table.full{
+    width: 100%;
+}
+table.base th{
+    padding: 10px 0px 10px 10px;
+    background: #AAA;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+div.page{
+    height: 25px;
+}
+
+table.base td{
+    border: 1px solid #bdbdbd;
+    padding: 5px;
+    word-break: break-all;
+    word-wrap:break-word;
+    font-size: 12px;
+    /*
+    word-wrap:break-word;
+    white-space: nowrap;
+    word-break: keep-all;
+    */
+}
+a.link{
+    color: #09F;
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline-block;
+}
+table.base{
+    background: #FFF;
+}
+table.base th{
+    background: #BBB;
+}
+table.base tr{
+    border: none;
+    background: none;
+}
+table.base tr:hover{
+    border: none;
+}
+table.base tr:nth-child(3n+1){
+    background: #EEE;
+}
+
+table.base tr:hover{
+    background: #EEE;
+    color: #111;
+}
+table.base th,div.notice,a.button.normal{
+    background: #EEE;
+    color: #111;
+}
+table.base tr:nth-child(3n+1){
+    background: #f4f4f4;
+}
+table.base td,table.base tr,table.base th,table.base{
+    border: none;
+}
+table.base{
+    border-bottom: 1px solid #EEE;
+}
+div.page,table.base th{
+    background: #dce0e1;
+    color: #535353;
+    margin: 0;
+}
+table.base th{
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+}
+table.base{
+    border-collapse: collapse;
+    border-spacing: 1px;
+}
+table.base tr{
+
+}
+table.base tr:hover,table.base tr:nth-child(3n+1){
+    background: initial;
+}
+table.base tr:nth-child(2n+1){
+    background: #eeeeee;
+}
+.none{
+    display: none;
+}
+.charts_table{
+    background: url('../images/table.png') no-repeat center;   
+    height: 35px;
+    width: 35px;
+}
+.charts_picture{
+ background: url('../images/picture.png') no-repeat center;
+     height: 35px;
+    width: 35px;
+}
+.charts_table_hover{
+ background: url('../images/table_hover.png') no-repeat center;
+     height: 35px;
+    width: 35px;
+}
+.charts_picture_hover{
+ background: url('../images/picture_hover.png') no-repeat center;   
+     height: 35px;
+    width: 35px;
+}

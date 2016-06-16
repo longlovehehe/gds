@@ -1,0 +1,2 @@
+{"data_base":{"db_host":"10.0.0.48","db_port":"5432","db_name":"OMPDB","db_user":"ompuser","db_pwd":"omppasswd"},
+    "data_gds":{"db_host":"10.0.0.48","db_port":"5432","db_name":"GDSDB","db_user":"gdsuser","db_pwd":"gdspasswd"}}

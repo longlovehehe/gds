@@ -1,0 +1,557 @@
+<html class="lang_cn_ZH can_select">
+<head>
+<meta charset="UTF-8">
+<meta content="max-age=2592000" http-equiv="pragma">
+<meta content="max-age=2592000" http-equiv="cache-control">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="webkit" name="renderer">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link type="image/x-icon" mce_href="favicon.ico" href="favicon.ico" rel="icon">
+<title></title>
+<style type="text/css">
+	h1.title{
+		background: rgba(0, 0, 0, 0) url("images/GQT_icon_logo_1x120_en.png") no-repeat scroll left 10px / 120px auto;
+	    height: 60px;
+	    margin: 0 auto;
+	    padding-top: 10px;
+	}	
+	h1.title > a {
+	    color: #848589;
+	    font-family: "微软雅黑";
+	    font-weight: 700;
+	}
+	a:link {
+	text-decoration: none;
+	}
+	a:visited {
+	text-decoration: none;
+	}
+	a:hover {
+	text-decoration: none;
+	}
+	a:active {
+	text-decoration: none;
+	}
+</style>
+</head>
+<body class="report" scroll="yes" style="background-color: #FFFFFF;font-family:verdana;">
+<div style="float:right;">
+	<a class="lang" data="cn_ZH"  href="./help.html">中文版 </a>
+	<span class='sep'>|</span>
+	<a class="lang" data="en_US" href="./help_en.html">English</a>
+	<span class='sep'>|</span>
+	<a class="lang" data="zh_TW"  href="./help_zh.html">繁體中文</a>
+</div>
+	<div class="header" align="center">
+		<header>
+			<h1 class="title _GQT_icon_logo_1x120_png"  style="width:600px; float:left; margin-left:25%; ">
+			<a>OMP - Data statistics</a>
+			</h1>
+			<div class="login_tips" style="overflow: hidden;float: right;padding-right: 20px;">
+			</div>
+		</header>
+	</div>
+	<div style="clear:both"></div>
+	<hr style="border-bottom:3px solid #B23E3E;border-top:0px solid #FF5F3E;">
+	<table width="80%" height="300" border="0" cellspacing="5" cellpadding="0" align="center" style="font-size:14px;">
+		<tr style="background-color:#B0C4DE">
+			<th align="center" colspan="2" height="24px;"><span style="font-size:14px;"><strong>Help</strong></span></th>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><a href="#01"><span style="color:#157074">>>Account</span></a></td>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><a href="#02"><span style="color:#157074">>>Activity</span></a></td>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><a href="#03"><span style="color:#157074">>>Traffic</span></a></td>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><a href="#04"><span style="color:#157074">>>Terminal</span></a></td>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><a href="#05"><span style="color:#157074">>>SIM Card</span></a></td>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><a href="#06"><span style="color:#157074">>>Overall</span></a></td>
+		</tr>
+
+		<tr id="01" style="background-color:#B0C4DE">
+			<td align="left" colspan="2" height="24px;">Account</td>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><strong>Account - User Details</strong></td>
+		</tr>
+		<tr>
+			<td>Activated User</td>
+			<td>The No. of current users in the system</td>
+		</tr>
+		<tr>
+			<td>Commerical</td>
+			<td>The No. of activated users that attributes is [Commerical]</td>
+		</tr>
+		<tr>
+			<td>Test</td>
+			<td>The No. of activated users that attributes is [Test]</td>
+		</tr>
+		<tr>
+			<td>Enable</td>
+			<td>The No. of activated users that attributes is [Enable]</td>
+		</tr>
+		<tr>
+			<td>Disable</td>
+			<td>The No. of activated users that attributes is [Disable]</td>
+		</tr>
+		<tr>
+			<td>Phone</td>
+			<td>The No. of activated users that attributes is [Phone]</td>
+		</tr>
+		<tr>
+			<td>Console</td>
+			<td>The No. of activated users that attributes is [Console]</td>
+		</tr>
+		<tr>
+			<td>GVS</td>
+			<td>The No. of activated users that attributes is [GVS]</td>
+		</tr>
+		<tr>
+			<td height="5px;" colspan="2"></td>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><strong>Account - Added user</strong></td>
+		</tr>
+		<tr>
+			<td>Current user</td>
+			<td>Current user = Total user - Lost user</td>
+		</tr>
+		<tr>
+			<td>Lost user</td>
+			<td>The No. of users that not login in 14 consecutive days(exclude new created user in 14 days) + Deleted user in the query date</td>
+		</tr>
+		<tr>
+			<td>Total user</td>
+			<td>In query date, the Activated users + Deleted users</td>
+		</tr>
+		<tr>
+			<td>proportion</td>
+			<td>(Current user/Total user) * 100%</td>
+		</tr>
+		<tr>
+			<td height="5px;" colspan="2"></td>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><strong>Account - Retention</strong></td>
+		</tr>
+		<tr>
+			<td>Added user</td>
+			<td>Created user per day; (create and delete in the same day won't be counted)</td>
+		</tr>
+		<tr>
+			<td>Deleted user</td>
+			<td>Deleted user per day; (create and delete in the same day won't be counted)</td>
+		</tr>
+		<tr>
+			<td>Net growth</td>
+			<td>Added user - Deleted user; Could be negative number</td>
+		</tr>
+		
+		
+		<tr>
+			<td align="left" colspan="2"><a href="#"><span style="color:#157074">>>Back to Top</span></a></td>
+		</tr>
+		<tr id="02" style="background-color:#B0C4DE">
+			<td align="left" colspan="2" height="24px;">Activity</th>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><strong>Activity - Online</strong></td>
+		</tr>
+		<tr>
+			<td>Online</td>
+			<td>When activity user login, then it will be marked as [Online], once per day;  If the user has logged and without logout during a day, it will be seemed as [Online] too.</td>
+		</tr>
+		<tr>
+			<td>Offline</td>
+			<td>It will be remark as [Offline] if activity user is offline and without login during the day</td>
+		</tr>
+		<tr>
+			<td>Total</td>
+			<td>Total = Online + Offline</td>
+		</tr>
+		<tr>
+			<td height="5px;" colspan="2"></td>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><strong>Activity - Continuity online</strong></td>
+		</tr>
+		<tr>
+			<td>Continuity online N days</td>
+			<td>A user with [Online] N days continuously</td>
+		</tr>
+		<tr>
+			<td height="5px;" colspan="2"></td>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><strong>Activity - Activity</strong></td>
+		</tr>
+		<tr>
+			<td>Active user</td>
+			<td>A user is [Onlin] in a day, then it will be activive user too</td>
+		</tr>
+		<tr>
+			<td>Total user</td>
+			<td>Total user = Activity user + Deleted user   [in each day]</td>
+		</tr>
+		<tr>
+			<td>Activity</td>
+			<td>(Active user/Total user) * 100%</td>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><a href="#"><span style="color:#157074">>>Back to Top</span></a></td>
+		</tr>
+		<tr id="03" style="background-color:#B0C4DE">
+			<td align="left" colspan="2" height="24px;">Traffic</th>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><strong>Traffic - PTT</strong></td>
+		</tr>
+		<tr>
+			<td>Total PTT</td>
+			<td>Total PTT amount among the selection time</td>
+		</tr>
+		<tr>
+			<td>PTT amount</td>
+			<td>PTT amount in each day</td>
+		</tr>
+		<tr>
+			<td>Total PTT time</td>
+			<td>Total PTT time among the selection time</td>
+		</tr>
+		<tr>
+			<td>PTT time</td>
+			<td>PTT time in each day</td>
+		</tr>
+		<tr>
+			<td height="5px;" colspan="2"></td>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><strong>Traffic - Voice</strong></td>
+		</tr>
+		<tr>
+			<td>Total voice</td>
+			<td>Total voice amount among the selection time</td>
+		</tr>
+		<tr>
+			<td>Total</td>
+			<td>Voice amount in each day</td>
+		</tr>
+		<tr>
+			<td>Out</td>
+			<td>No. of calling-out in each day</td>
+		</tr>
+		<tr>
+			<td>In</td>
+			<td>No. of calling-in in each day</td>
+		</tr>
+		<tr>
+			<td>Total voice time</td>
+			<td>Total voice time among the selection time</td>
+		</tr>
+		<tr>
+			<td>Total time</td>
+			<td>Voice time in each day</td>
+		</tr>
+		<tr>
+			<td>Out</td>
+			<td>Time of calling-out in each day</td>
+		</tr>
+		<tr>
+			<td>In</td>
+			<td>Time of calling-in in each day</td>
+		</tr>	
+		<tr>
+			<td height="5px;" colspan="2"></td>
+		</tr>	
+		<tr>
+			<td align="left" colspan="2"><strong>Traffic - Video</strong></td>
+		</tr>
+		<tr>
+			<td>Total video</td>
+			<td>Total video amount among the selection time</td>
+		</tr>
+		<tr>
+			<td>Total</td>
+			<td>Video amount in each day</td>
+		</tr>
+		<tr>
+			<td>Out</td>
+			<td>No. of Calling-out in each day</td>
+		</tr>
+		<tr>
+			<td>In</td>
+			<td>No. of Calling-in in each day</td>
+		</tr>
+		<tr>
+			<td>Total video time</td>
+			<td>Total video time among the selection time</td>
+		</tr>
+		<tr>
+			<td>Total time</td>
+			<td>Video time in each day</td>
+		</tr>
+		<tr>
+			<td>Out</td>
+			<td>Time of calling-out in each day</td>
+		</tr>
+		<tr>
+			<td>In</td>
+			<td>Time of calling-in in each day</td>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><a href="#"><span style="color:#157074">>>Back to Top</span></a></td>
+		</tr>
+		<tr id="04" style="background-color:#B0C4DE">
+			<td align="left" colspan="2" height="24px;">Terminal</th>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><strong>Terminal - Terminal Model</strong></td>
+		</tr>		
+		<tr>
+			<td>Test</td>
+			<td>No. of used Terminals that attributes is [Test] (each day)</td>
+		</tr>
+		<tr>
+			<td>Commerical</td>
+			<td>No. of used Terminals that attributes is [Commerical] (each day)</td>
+		</tr>
+		<tr>
+			<td>Models</td>
+			<td>No. of used Terminals with each Models</td>
+		</tr>
+		<tr>
+			<td>Total Terminals</td>
+			<td>Total No. of used Terminals</td>
+		</tr>
+		<tr>
+			<td>Total Commerical Terminals</td>
+			<td>Total No. of used Terminals that attributes is [Commerical]</td>
+		</tr>
+		<tr>
+			<td height="5px;" colspan="2"></td>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><strong>Terminal -  Top channels</strong></td>
+		</tr>	
+		<tr>
+			<td>Channels</td>
+			<td>List Top10 items that has the most No. of [Commerical] Terminals; When Select OMP, list Top10 AMP1; When select AMP1 or AMP2, then list Top 10 EMP(EMP that belong to that AMP)</td>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><a href="#"><span style="color:#157074">>>Back to Top</span></a></td>
+		</tr>
+		<tr id="05" style="background-color:#B0C4DE">
+			<td align="left" colspan="2" height="24px;">SIM Card</th>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><strong>SIM Card - Type</strong></td>
+		</tr>
+		<tr>
+			<td>Test</td>
+			<td>No. of used SIM Card that attributes is [Test] (each day)</td>
+		</tr>
+		<tr>
+			<td>Commerical</td>
+			<td>No. of used SIM Card that attributes is [Commerical] (each day)</td>
+		</tr>
+		<tr>
+			<td>Total SIM Card</td>
+			<td>Total No. of used SIM Card</td>
+		</tr>
+		<tr>
+			<td>Total Commerical SIM Card</td>
+			<td>Total No. of used SIM Card that attributes is [Commerical]</td>
+		</tr>
+		<tr>
+			<td height="5px;" colspan="2"></td>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><strong>SIM Card - Top channels</strong></td>
+		</tr>
+		<tr>
+			<td>Channels</td>
+			<td>List Top10 items that has the most No. of [Commerical] SIM Card; When Select OMP, list Top10 AMP1; When select AMP1 or AMP2, then list Top 10 EMP(EMP that belong to that AMP)</td>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><a href="#"><span style="color:#157074">>>Back to Top</span></a></td>
+		</tr>
+		<tr id="06" style="background-color:#B0C4DE">
+			<td align="left" colspan="2" height="24px;">Overall</th>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><strong>Overall - form</strong></td>
+		</tr>		
+		<tr>
+			<td>Total User</td>
+			<td>(Activated user + Deleted user) until the query time</td>
+		</tr>
+		<tr>
+			<td>Activated User</td>
+			<td>The No. of current users in the system</td>
+		</tr>
+		<tr>
+			<td>Total Online</td>
+			<td>The No. of total Online users until the query time ( each user will be online once in a single day)</td>
+		</tr>
+		<tr>
+			<td>Commerical User</td>
+			<td>The No. of activated users that attributes is [Commerical]</td>
+		</tr>
+		<tr>
+			<td height="5px;" colspan="2"></td>
+		</tr>		
+		<tr>
+			<td>Total PTT</td>
+			<td>The total PTT amount in the query time</td>
+		</tr>
+		<tr>
+			<td>Total PTT Time</td>
+			<td>The total PTT time in the query time</td>
+		</tr>
+		<tr>
+			<td>Total Calling Amount</td>
+			<td>Total calling amount (Voice + Video) until query time</td>
+		</tr>
+		<tr>
+			<td>Total Calling Time</td>
+			<td>Total calling time (Voice + Video) until query time</td>
+		</tr>	
+		<tr>
+			<td height="5px;" colspan="2"></td>
+		</tr>		
+		<tr>
+			<td>Activated Terminals</td>
+			<td>No. of used Terminals until query time</td>
+		</tr>
+		<tr>
+			<td>Commerical Terminals</td>
+			<td>The No. of used Terminals that attributes is [Commerical]</td>
+		</tr>
+		<tr>
+			<td>Activated SIM Card</td>
+			<td>No. of used SIM Card until query time</td>
+		</tr>
+		<tr>
+			<td>Commerical SIM Card</td>
+			<td>The No. of used SIM Card that attributes is [Commerical]</td>
+		</tr>
+		<tr>
+			<td height="5px;" colspan="2"></td>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><strong>Overall - Chart</strong></td>
+		</tr>
+		<tr>
+			<td>Total activated user</td>
+			<td>The No. of current users in the system</td>
+		</tr>
+		<tr>
+			<td>Classify - Test</td>
+			<td>The No. of activated users that attributes is [Test]</td>
+		</tr>
+		<tr>
+			<td>Classify - Commerical</td>
+			<td>The No. of activated users that attributes is [Commerical]</td>
+		</tr>
+		<tr>
+			<td>Type - Phone</td>
+			<td>The No. of activated users that attributes is [Phone]</td>
+		</tr>
+		<tr>
+			<td>Type - Conosle</td>
+			<td>The No. of activated users that attributes is [Console]</td>
+		</tr>
+		<tr>
+			<td>Type - GVS</td>
+			<td>The No. of activated users that attributes is [GVS]</td>
+		</tr>
+		<tr>
+			<td height="5px;" colspan="2"></td>
+		</tr>
+		<tr>
+			<td>Total Calling Amount</td>
+			<td>Total calling amount/Time until the query time</td>
+		</tr>
+		<tr>
+			<td>Amount - Voice</td>
+			<td>Voice call amount until the query time</td>
+		</tr>
+		<tr>
+			<td>Amount - Video</td>
+			<td>Video call amount until the query time</td>
+		</tr>
+		<tr>
+			<td>Time - Voice</td>
+			<td>Voice call time (minutes) until the query time</td>
+		</tr>
+		<tr>
+			<td>Time - Video</td>
+			<td>Video call time (minutes) until the query time</td>
+		</tr>
+		<tr>
+			<td height="5px;" colspan="2"></td>
+		</tr>
+		<tr>
+			<td>Total Terminals</td>
+			<td>The No. of used Terminals in the query time</td>
+		</tr>
+		<tr>
+			<td>Classify - Test</td>
+			<td>The No. of used Terminals that attributes is [Test]</td>
+		</tr>
+		<tr>
+			<td>Classify - Commerical</td>
+			<td>The No. of used Terminals that attributes is [Commerical]</td>
+		</tr>
+		<tr>
+			<td>Type - Models</td>
+			<td>Terminal models</td>
+		</tr>
+		<tr>
+			<td height="5px;" colspan="2"></td>
+		</tr>	
+		<tr>
+			<td>Total SIM Card</td>
+			<td>The No. of used SIM Card in the query time</td>
+		</tr>
+		<tr>
+			<td>Test</td>
+			<td>The No. of used SIM Card that attributes is [Test]</td>
+		</tr>
+		<tr>
+			<td>Commerical</td>
+			<td>The No. of used SIM Card that attributes is [Commerical]</td>
+		</tr>
+		<tr>
+			<td height="5px;" colspan="2"></td>
+		</tr>	
+		<tr>
+			<td>Top channels</td>
+			<td>List Top10 items; When Select OMP, list Top10 AMP1; When select AMP1 or AMP2, then list Top 10 EMP(EMP that belong to that AMP)</td>
+		</tr>
+		<tr>
+			<td>Commerical user</td>
+			<td>List based on No. of commerical user</td>
+		</tr>
+		<tr>
+			<td>Commerical Terminals</td>
+			<td>List based on No. of commerical Terminals</td>
+		</tr>
+		<tr>
+			<td>Commerical SIM Card</td>
+			<td>List based on No. of commerical SIM Card</td>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><a href="#"><span style="color:#157074">>>Back to Top</span></a></td>
+		</tr>
+	</table>
+</body>
+</html>
